@@ -1,0 +1,14 @@
+
+<html>
+  <button id="btnTest">DATE TEST</button>
+<html>
+
+<script>
+  $(document).on('click','#btnTest',function(){
+    var d = new Date();
+    document.write('Today is: ' + d.toLocaleString());
+    d.setDate(d.getDate() - 7);
+    document.write('<br>5 days ago was: ' + d.toLocaleString());
+
+  });
+</script>
